@@ -17,7 +17,16 @@ public static void main(String[] args) {
         map.put(4, "Boston");
         map.put(5, "San Jose");
         map.put(6, "Seattle");
-
+        System.out.println(map.get(1));
+        System.out.println(map.get(2));
+        System.out.println((map.get(3)));
+        System.out.println(map.get(4));
+        System.out.println(map.get(5));
+        System.out.println(map.get(6));
+        for(HashMap.Entry<Integer,String> entry:map.entrySet())
+        {
+                System.out.println((entry.getKey()+ ":" + entry.getValue()));
+        }
 
 
     }
