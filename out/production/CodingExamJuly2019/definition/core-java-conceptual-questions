@@ -3,31 +3,39 @@ Please answer the below core-java Questions:
 What is programing language?
 A.
 
-
+ Programming languages are used in computer programming to implement algorithms.Which comprises a set
+ of instructions that produce various kinds of output.
 
 
 What jdk contains or composed of and define each components?
 A.
 
-
+JDK means Java development kit. it contains memory,stack, JVM
 
 
 
 What is IDE?
 A.
-
+ integrated development environment
 
 
 What are the IDEs available in the market to support java?
 A.
+NetBeans,eclips,intellli j,Android Studio,etc
 
 
 
 Explain the entire java life cycle.
 what is class?
+Class is a blueprint of an object.
 What is object?
+Object is an instance of a class
 What is the entry point of an application?
+Application entry points are used to control users' access
 Why main is static?
+main method has to be declared static because keyword static allows main to be called without creating an object of the class in which the main method is defined.
+main method has to be declared static because keyword static allows main to be called without creating an object of the class in which the main method is defined.
+
 Which class is the superclass of all classes?
 What is difference between path and classpath variables?
 What is the difference between an Interface and Abstract class?
