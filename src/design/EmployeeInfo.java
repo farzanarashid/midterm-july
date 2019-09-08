@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo implements Employee {
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -21,6 +21,7 @@ public class EmployeeInfo {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
+
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -33,11 +34,23 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
-		
+		employeeId=123;
+		System.out.println(employeeId);
+
 	}
+	public String name1;
+	public int employeeId1;
+	public String DepartmentName1;
+	public int salary;
+
+
     public EmployeeInfo(String name, int employeeId){
-		
+		this.employeeId1=employeeId;
+		this.name1=name;
+
 	}
+
+
 	
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
@@ -49,7 +62,10 @@ public class EmployeeInfo {
 	 */
 	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
 		int total=0;
+
+
 		return total;
+
 	}
 	
 	/*
@@ -75,6 +91,39 @@ public class EmployeeInfo {
 
 		return total;
 	}
+
+	@Override
+	public int employeeId() {
+		return employeeId1;
+	}
+
+	@Override
+	public String employeeName() {
+		return name1;
+	}
+
+	@Override
+	public void assignDepartment() {
+		this.DepartmentName1="sales";
+			return;
+	}
+
+	@Override
+	public int calculateSalary() {
+     int yearlySalary;
+		int salary=5000;
+		yearlySalary=salary*12;
+		return yearlySalary;
+	}
+
+	@Override
+	public void benefitLayout() {
+     double bonus=0.5;
+		System.out.println(bonus);
+		return ;
+
+	}
+
 	private static class DateConversion {
 
 		public DateConversion(Months months){}
